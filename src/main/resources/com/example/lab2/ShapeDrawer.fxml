@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.ShapeDrawerController">
+    <center>
+        <Canvas fx:id="canvas" height="600.0" width="800.0" />
+    </center>
+    <bottom>
+        <HBox spacing="10.0">
+            <ColorPicker fx:id="fillColorPicker" />
+            <ColorPicker fx:id="strokeColorPicker" />
+            <Spinner fx:id="sizeSpinner" editable="true" />
+            <Button fx:id="circleButton" onAction="#onCircleClick" text="Круг" />
+            <Button fx:id="rectangleButton" onAction="#onRectangleClick" text="Прямоугольник" />
+            <Button fx:id="roundedRectangleButton" onAction="#onRoundedRectangleClick" text="Скруг. прямоугольник" />
+            <Button fx:id="squareButton" onAction="#onSquareClick" text="Квадрат" />
+            <Button fx:id="ellipseButton" onAction="#onEllipseClick" text="Овал" />
+        </HBox>
+    </bottom>
+</BorderPane>
